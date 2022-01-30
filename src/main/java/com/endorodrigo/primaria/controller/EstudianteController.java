@@ -1,10 +1,9 @@
 package com.endorodrigo.primaria.controller;
 
 import java.util.List;
-<<<<<<< HEAD
-=======
+
 import java.util.Optional;
->>>>>>> d168083 (Finalizacion del Front para CRUD ESTUDIANTES)
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -44,14 +43,12 @@ public class EstudianteController {
 	public void eliminarEstudiante(@RequestBody Alumno user) {	
 		alumnoDao.delete(user);
 	}
-<<<<<<< HEAD
-=======
 	
 	@RequestMapping(value = "api/alumno/{id}", method = RequestMethod.GET)
 	public Optional<Alumno> consultarEstudiante(@PathVariable int id) {
 		Optional<Alumno> consulta = alumnoDao.findAllById(id);
 		return consulta;
 	}
->>>>>>> d168083 (Finalizacion del Front para CRUD ESTUDIANTES)
+
 
 }

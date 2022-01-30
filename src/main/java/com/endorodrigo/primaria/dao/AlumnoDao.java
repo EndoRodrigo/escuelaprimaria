@@ -10,9 +10,7 @@ import com.endorodrigo.primaria.model.Alumno;
 @Repository
 public interface AlumnoDao extends CrudRepository<Alumno, Long>{
 
-<<<<<<< HEAD
-=======
+
 	Optional<Alumno> findAllById(int id);
 
->>>>>>> d168083 (Finalizacion del Front para CRUD ESTUDIANTES)
 }

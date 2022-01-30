@@ -6,14 +6,6 @@ $(document).ready(function() {
 //Variables globales
 let datos = {};
 
-<<<<<<< HEAD
-function cargarUsuarios(){
-	datos.id = document.getElementById('id').innerHTML = '1116666729';
-	datos.nombres = document.getElementById('nombres').innerHTML = 'Endo Rodrigo';
-	datos.apellidos = document.getElementById('apellidos').innerHTML = 'Rodriguez Ariza';
-	datos.correo = document.getElementById('correo').innerHTML = 'endo@gmail.com';
-
-=======
 async function cargarUsuarios(){
 	const request = await fetch('api/alumnos',{
 		method: 'GET',
@@ -152,5 +144,4 @@ async function elimairEstudiante(){
 	window.location.href = 'tables.html'
 
 	
->>>>>>> d168083 (Finalizacion del Front para CRUD ESTUDIANTES)
 }
